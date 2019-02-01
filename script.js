@@ -17,7 +17,7 @@ jQuery(document).ready(function($) {
 		            items:1
 		        }
 		    }
-		   })
+		   });
 	// Click image in Gallery
 	$('.gallery-item').click(function(event) {
 		var curLinkImage = $(this).find('img').attr('src');
@@ -49,7 +49,13 @@ jQuery(document).ready(function($) {
 	$('a').click(function(event) {
 		event.preventDefault();
 		var link = $(this).data('tab');
+		var selector = '[data-target="'+link+'"]';
+		var pos = $(selector).offset().top;
 		$('html,body').animate({
-			scrollTop: 300
-	});
+			scrollTop: pos},
+			1000, function() {
+			/* stuff to do after animation is complete */
+		});
+		});
+
 });
