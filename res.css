@@ -59,6 +59,11 @@
     text-align: center;
     font-size: 28px;
 	}
+	.logo-mobile__text{
+		    text-align: left;
+    padding-left: 15px;
+    color: #f00;
+	}
 	.main-menu .logo{
 		display: none;
 	}
