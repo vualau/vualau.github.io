@@ -42,4 +42,7 @@ jQuery(document).ready(function($) {
 		}
 	});
 	
+	if(screen.width <= 414){
+		loadItem();
+	}
 });
