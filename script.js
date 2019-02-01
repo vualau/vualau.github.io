@@ -6,6 +6,7 @@ jQuery(document).ready(function($) {
 		    loop:true,
 		    margin:10,
 		    nav:false,
+		    autoplay:true,
 		    responsive:{
 		        0:{
 		            items:1
@@ -33,7 +34,6 @@ jQuery(document).ready(function($) {
 	}
 	//loadItem();
 	var posDish = $('.dish').offset().top;
-	console.log(posDish);
 	var posScroll;
 	$(window).scroll(function(event) {
 		posScroll = $(window).scrollTop();
