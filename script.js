@@ -45,4 +45,11 @@ jQuery(document).ready(function($) {
 	if(screen.width <= 414){
 		loadItem();
 	}
+
+	$('a').click(function(event) {
+		event.preventDefault();
+		var link = $(this).data('tab');
+		$('html,body').animate({
+			scrollTop: 300
+	});
 });
